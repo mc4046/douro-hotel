@@ -97,43 +97,6 @@ footer {
     text-align: center;
     padding: 20px;
 }
-
-    .slideshow-container {
-        position: relative;
-        width: 80%;
-        max-width: 800px;
-    }
-
-    .slide {
-        display: none;
-        width: 100%;
-    }
-
-    .slide img {
-        width: 100%;
-        border-radius: 10px;
-    }
-
-    /* Buttons */
-    .prev, .next {
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        padding: 10px;
-        color: white;
-        font-size: 24px;
-        background: rgba(0,0,0,0.5);
-        border-radius: 50%;
-        user-select: none;
-    }
-
-    .prev { left: 10px; }
-    .next { right: 10px; }
-
-    .prev:hover, .next:hover {
-        background: rgba(255,255,255,0.3);
-    }
 </style>
 </head>
 
@@ -321,15 +284,11 @@ Rua Cabo de Simão, Nº 48, Vila Nova de Gaia
 <h2>Gallery</h2>
 <p>Images go here</p>
 
-<div class="slideshow-container">
-    <div class="slide"><img src="1.jpeg"></div>
-    <div class="slide"><img src="2.jpeg"></div>
-    <div class="slide"><img src="3.jpeg"></div>
-    <div class="slide"><img src="4.jpeg"></div>
-
-    <div class="prev" onclick="changeSlide(-1)">❮</div>
-    <div class="next" onclick="changeSlide(1)">❯</div>
-</div>
+<img src="1.jpeg" width="200">
+<img src="2.jpeg" width="200">
+<img src="3.jpeg" width="200">
+<img src="4.jpeg" width="200">
+<img src="5.jpeg" width="200">
 </section>
 
 <section id="contact">
@@ -342,32 +301,6 @@ Rua Cabo de Simão, Nº 48, Vila Nova de Gaia
 <footer>
 <p>© 2026 Douro Hotel</p>
 </footer>
-<script>
-let slideIndex = 0;
-let slides = document.getElementsByClassName("slide");
 
-function showSlide(index) {
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    slideIndex = (index + slides.length) % slides.length;
-    slides[slideIndex].style.display = "block";
-}
-
-// Manual controls
-function changeSlide(n) {
-    showSlide(slideIndex + n);
-}
-
-// Auto slideshow (every 3 seconds)
-function autoSlide() {
-    showSlide(slideIndex + 1);
-    setTimeout(autoSlide, 3000);
-}
-
-// Init
-showSlide(slideIndex);
-autoSlide();
-</script>
 </body>
 </html>
