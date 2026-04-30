@@ -1,7 +1,0 @@
-As a current Synopsys engineer with extensive experience in advanced IC design and high-speed interface development, I am looking to broaden my impact by moving into a role that focuses more on system-level challenges and security aspects of modern semiconductor solutions.
-
-Through my work, I have developed strong expertise in deep submicron technologies and complex SoC design. I am particularly interested in applying this background to areas such as secure hardware design, hardware/software co-design, and system-level vulnerability analysis.
-
-This opportunity aligns well with my goal of expanding my technical scope within Synopsys while contributing to innovative R&D efforts in security and reliability. I am especially motivated to leverage my existing knowledge of Synopsys tools, methodologies, and culture to deliver impact quickly in this new domain.
-
-In the long term, I aim to grow into a key technical contributor and leader, driving the development of robust, secure, and high-performance semiconductor solutions.
